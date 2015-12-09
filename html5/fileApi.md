@@ -1,0 +1,1 @@
+http://www.w3.org/html/ig/zh/wiki/File#FileReaderSync.E6.8E.A5.E5.8F.A3
