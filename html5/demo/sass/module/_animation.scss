@@ -2,13 +2,14 @@
 .animate-screen {
   height: 220px;
   width: 400px;
-  border: solid 1px ;
+  border: solid 1px $gray-lighter;
 }
 
 .animate-screen-content {
-  background-color: white;
+  background-color: $gray-light;
 }
 
-.animate-screen-content-box {
+.animate-screen-content-box  {
+
 
 }
