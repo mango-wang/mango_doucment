@@ -1,0 +1,44 @@
+// 动画
+
+@mixin animation($fromProperty,$toProperty,$fromValue,$toValue) {
+  .all-motion {
+
+    animation: motion 5s infinite;
+    -moz-animation: motion 5s infinite; /* Firefox */
+    -webkit-animation: motion 5s infinite; /* Safari and Chrome */
+    -o-animation: motion 5s infinite; /* Opera */
+
+    @keyframes motion {
+      from {
+        $fromProperty: $fromValue
+      }
+      to {
+        $toProperty: $toValue
+      }
+    }
+    @-moz-keyframes motion {
+      from {
+        $fromProperty: $fromValue
+      }
+      to {
+        $toProperty: $toValue
+      }
+    }
+    @-webkit-keyframes motion {
+      from {
+        $fromProperty: $fromValue
+      }
+      to {
+        $toProperty: $toValue
+      }
+    }
+    @-o-keyframes motion {
+      from {
+        $fromProperty: $fromValue
+      }
+      to {
+        $toProperty: $toValue
+      }
+    }
+  }
+}

@@ -1,15 +1,78 @@
 /* screen 控制大小 */
 .animate-screen {
-  height: 220px;
+  height: 300px;
   width: 400px;
   border: solid 1px $gray-lighter;
+  z-index: 100;
 }
 
 .animate-screen-content {
-  background-color: $gray-light;
+  width: 10000px;
+  position: fixed;
+  animation: testmove 5s infinite;
+  -moz-animation: testmove 5s infinite; /* Firefox */
+  -webkit-animation: testmove 5s infinite; /* Safari and Chrome */
+  -o-animation: testmove 5s infinite; /* Opera */
+
+  z-index: -100;
+  ul {
+    display: initial;
+    list-style-type: none;
+    background-color: red;
+    height: 100px;
+    li {
+      float: left;
+      margin: 0px;
+
+    }
+  }
 }
 
-.animate-screen-content-box  {
+.animate-box {
+  height: 300px;
 
+}
 
+@keyframes testmove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -700px;
+  }
+}
+
+/*进度条*/
+
+/*进度条*/
+.container {
+  margin: 3rem auto;
+  max-width: 600px;
+}
+.bar{
+  height: 40px;
+  transition: width 1.2s ease-in-out;
+  position: relative;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  &.mint{
+    background-color:#14c3a2;
+    background-image:repeating-linear-gradient(-53deg, #14c3a2, #14c3a2 30px, #22e8c3 30px, #22e8c3 60px);
+    background-size: 600px 100%;
+    animation:barberpole 12s linear infinite;
+    border-bottom:0.2rem solid #0d7e68
+  }
+  &.active[data-percent="100"] {
+    width: 100%;
+  }
+}
+
+@keyframes barberpole {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 600px 0%;
+  }
 }
