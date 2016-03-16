@@ -1,9 +1,17 @@
-//minxin
-@import "mixin/animation";
-
 //var
 @import "variable";
 
 
+//minxin
+@import "mixin/animation";
+
+
 //module
-@import "module/animation";
+//module animation
+@import "module/animation/bannerScrolling";
+@import "module/animation/progress";
+
+//module
+
+
+

@@ -1,15 +1,14 @@
 @charset "UTF-8";
-/* screen 控制大小 */
-/* line 2, ../sass/module/_animation.scss */
-.animate-screen {
+/* 横幅滚动 */
+/* line 3, ../sass/module/animation/_bannerScrolling.scss */
+.container-section-banner-scrolling .animate-screen {
   height: 300px;
   width: 400px;
   border: solid 1px #dedede;
   z-index: 100;
 }
-
-/* line 9, ../sass/module/_animation.scss */
-.animate-screen-content {
+/* line 8, ../sass/module/animation/_bannerScrolling.scss */
+.container-section-banner-scrolling .animate-screen .animate-screen-content {
   width: 10000px;
   position: fixed;
   animation: testmove 5s infinite;
@@ -19,43 +18,29 @@
   /* Safari and Chrome */
   -o-animation: testmove 5s infinite;
   /* Opera */
-  z-index: -100;
 }
-/* line 18, ../sass/module/_animation.scss */
-.animate-screen-content ul {
+/* line 15, ../sass/module/animation/_bannerScrolling.scss */
+.container-section-banner-scrolling .animate-screen .animate-screen-content ul {
   display: initial;
   list-style-type: none;
   background-color: red;
   height: 100px;
 }
-/* line 23, ../sass/module/_animation.scss */
-.animate-screen-content ul li {
+/* line 20, ../sass/module/animation/_bannerScrolling.scss */
+.container-section-banner-scrolling .animate-screen .animate-screen-content ul li {
   float: left;
   margin: 0px;
 }
 
-/* line 31, ../sass/module/_animation.scss */
-.animate-box {
-  height: 300px;
-}
-
-@keyframes testmove {
-  from {
-    left: 0px;
-  }
-  to {
-    left: -700px;
-  }
-}
+/* 横幅滚动 */
 /*进度条*/
-/*进度条*/
-/* line 48, ../sass/module/_animation.scss */
+/* line 2, ../sass/module/animation/_progress.scss */
 .container {
   margin: 3rem auto;
   max-width: 600px;
 }
 
-/* line 52, ../sass/module/_animation.scss */
+/* line 6, ../sass/module/animation/_progress.scss */
 .bar {
   height: 40px;
   transition: width 1.2s ease-in-out;
@@ -63,14 +48,14 @@
   margin: 0.5rem 0;
   border-radius: 4px;
 }
-/* line 58, ../sass/module/_animation.scss */
+/* line 12, ../sass/module/animation/_progress.scss */
 .bar.mint {
   background-image: repeating-linear-gradient(-53deg, #14c3a2, #14c3a2 30px, #22e8c3 30px, #22e8c3 60px);
   background-size: 600px 100%;
   animation: barberpole 12s linear infinite;
   border-bottom: 0.2rem solid #0d7e68;
 }
-/* line 64, ../sass/module/_animation.scss */
+/* line 18, ../sass/module/animation/_progress.scss */
 .bar.active[data-percent="100"] {
   width: 100%;
 }

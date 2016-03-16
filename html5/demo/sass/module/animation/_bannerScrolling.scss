@@ -1,0 +1,30 @@
+/* 横幅滚动 */
+.container-section-banner-scrolling {
+  .animate-screen {
+    height: 300px;
+    width: 400px;
+    border: solid 1px $gray-lighter;
+    z-index: 100;
+    .animate-screen-content {
+      width: 10000px;
+      position: fixed;
+      animation: testmove 5s infinite;
+      -moz-animation: testmove 5s infinite; /* Firefox */
+      -webkit-animation: testmove 5s infinite; /* Safari and Chrome */
+      -o-animation: testmove 5s infinite; /* Opera */
+      ul {
+        display: initial;
+        list-style-type: none;
+        background-color: red;
+        height: 100px;
+        li {
+          float: left;
+          margin: 0px;
+
+        }
+      }
+    }
+  }
+}
+
+/* 横幅滚动 */
